@@ -4,15 +4,25 @@ var TimerEl = document.getElementById('Timer')
 var Seconds = 5 
 var questions = [
   {
-    question: 'Which US state has the largest population?',
-    choices: ['Delaware', 'California', 'New York', 'Kentucky'],
-    answer: 'California'
+    question: 'Which food is best?',
+    choices: ['Chicken', 'Steak', 'Fish', 'All-the-above'],
+    answer: 'All-the-above'
   },
   {
-    question: 'Which US state has the largest population?',
-    choices: ['Delaware', 'California', 'New York', 'Kentucky'],
-    answer: 'California'
+    question: 'What is the best kind of snack?',
+    choices: ['Chips', 'Candy', 'Carrots', 'All the above'],
+    answer: 'Carrots'
   },
+  {
+    question: 'How many bars comes with a twix pack?',
+    choices: ['5','4','2','1'],
+    answer: '2'
+  },
+  {
+    question: 'What is a good fruit to eat?',
+    choices: ['mango','carrots','apples','guava'],
+    answer: 'mango'
+  }
 
 ]
 
@@ -48,5 +58,4 @@ button.textContent = questions[0].choices[i]
 document.querySelector("#quiz-questions").append(button)
 
 }
-
 }
