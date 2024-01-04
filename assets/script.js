@@ -1,7 +1,7 @@
 var startButtonEL = document.getElementById('Start-Quiz');
 startButtonEL.addEventListener("click", Startquiz); 
 var TimerEl = document.getElementById('Timer')
-var Seconds = 5 
+var Seconds = 55 
 var questions = [
   {
     question: 'Which food is best?',
