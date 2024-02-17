@@ -6,6 +6,7 @@ var index = 0
 var Timer
 var questions = [
   {
+    // array containing the quiz questions
     question: 'Which food is best?',
     choices: ['Chicken', 'Steak', 'Fish', 'All-the-above'],
     answer: 'All-the-above'
@@ -27,7 +28,7 @@ var questions = [
   }
 
 ]
-
+// this starts the quiz
 function Startquiz() {
     console.log(startButtonEL)
     TimerEl.textContent = Seconds
@@ -48,7 +49,7 @@ function Startquiz() {
       }, 1000);
       displayquestions()
   }
-  
+  // this displays the questions
 function displayquestions() {
   document.querySelector("#quiz-questions").innerHTML=""
   var questionEl = document.createElement("h3")
@@ -58,16 +59,20 @@ function displayquestions() {
 for (var i = 0; i < questions[index].choices.length;i++) {
 var button = document.createElement("button")
 button.textContent = questions[index].choices[i]
+// add the event listener for each choice button
 button.addEventListener("click", function(event){
   if (event.target.innerText !== questions[index].answer){
     Seconds -= 5
   }
+  // moves to the next question
 index ++
 if (index >= questions.length){
   var score = document.createElement("p")
   score.innerText = "Your Score Is " + (Seconds -5)
   document.querySelector("#quiz-questions").innerHTML=""
   document.querySelector("#quiz-end").append(score)
+
+  // stops the timer
   clearInterval(Timer);
   return 
 }
