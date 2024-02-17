@@ -22,8 +22,8 @@ var questions = [
   },
   {
     question: 'What is a good fruit to eat?',
-    choices: ['mango','carrots','apples','guava'],
-    answer: 'mango'
+    choices: ['Mango','Carrots','Apples','Guava'],
+    answer: 'Mango'
   }
 
 ]
@@ -65,7 +65,7 @@ button.addEventListener("click", function(event){
 index ++
 if (index >= questions.length){
   var score = document.createElement("p")
-  score.innerText = "your score is " + Seconds
+  score.innerText = "Your Score Is " + (Seconds -5)
   document.querySelector("#quiz-questions").innerHTML=""
   document.querySelector("#quiz-end").append(score)
   clearInterval(Timer);
