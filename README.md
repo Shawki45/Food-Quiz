@@ -7,7 +7,10 @@
 
 
 ## Project Links
-    - 
+    - https://shawki45.github.io/Food-Quiz/
+    - https://github.com/Shawki45/Food-Quiz.git
+
+    
 
 ## Sources
     -tutors and zoom class meetings
